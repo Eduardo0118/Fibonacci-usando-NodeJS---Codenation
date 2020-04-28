@@ -1,0 +1,17 @@
+"use strict";
+
+const fibonacci = () => {
+  const arr = [0,1];
+
+  for(let i = 2; i < 15; i++) {
+    arr.push(arr[i - 2] + arr[i - 1]);
+  }
+  return arr;
+};
+
+const isFibonnaci = num => fibonacci().includes(num);
+
+module.exports = {
+  fibonacci,
+  isFibonnaci,
+};
